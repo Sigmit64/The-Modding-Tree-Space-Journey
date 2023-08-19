@@ -63,7 +63,7 @@ function getPointGen() {
 	let solarPanelGain = new Decimal(0)
 	solarPanelGain = solarPanelGain.add(10)
 
-	let solarPanelGainMult = d100
+	let solarPanelGainMult = d1
 	solarPanelGainMult = solarPanelGainMult.times(getBuyableAmount('c', 11).add(1))
 	if (hasUpgrade('c', 111)) solarPanelGainMult =solarPanelGainMult.times(2)
 	if (hasUpgrade('c', 112)) solarPanelGainMult = solarPanelGainMult.times(upgradeEffect('c', 112))
